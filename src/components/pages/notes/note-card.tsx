@@ -10,8 +10,8 @@ export default function NoteCard({ note, category }: { note: Note; category?: st
   return (
     <div className="bg-stone-800 p-3 rounded-md flex flex-col gap-1.5 min-h-[158px] relative">
       <p className="font-extrabold text-xl">{note.title}</p>
-      {category && <p>category: {category}</p>}
-      <p className="truncate">{note.content}</p>
+      {category && <p>In "{category}" category</p>}
+      <p className="truncate text-neutral-500">{note.content}</p>
 
       <div className="w-[96%] left-1/2 -translate-x-1/2 flex justify-end absolute bottom-2.5">
         <button

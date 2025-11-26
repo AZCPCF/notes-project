@@ -9,7 +9,7 @@ export default async function Page() {
 
   return (
     <main>
-      <h1 className="text-2xl mb-4 flex items-center gap-2">
+      <h1 className="text-3xl mb-6 flex items-center gap-2">
         <FaNoteSticky /> Notes App
       </h1>
       <AddNote categories={categories} />
