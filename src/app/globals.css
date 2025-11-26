@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
+}
+input,
+textarea,
+select,
+button[type="submit"] {
+  @apply bg-neutral-700 rounded-md p-2 resize-none focus:outline-2 outline-stone-500;
+}
+button[type="submit"] {
+  @apply bg-stone-500 disabled:bg-stone-600;
+}
+button{
+  cursor: pointer;
+}
