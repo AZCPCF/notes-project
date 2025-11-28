@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { Note, notes } from "./db";
+import { delay } from "@/lib/delay";
 
 export async function GET() {
+  await delay(500);
   return NextResponse.json({ data: notes });
 }
 
